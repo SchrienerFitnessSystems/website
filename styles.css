@@ -436,7 +436,7 @@ a {
   }
   .custom-text {
     position: relative;
-    width: 80% !important;
+    /*width: 80% !important;*/
     top: 0;
     padding: 30% 0;
   }
