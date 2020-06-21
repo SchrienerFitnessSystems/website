@@ -592,28 +592,33 @@ footer img {
   .custom-workouts {
     background-color: #020B14;
     height: auto;
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     -ms-grid-columns: 1;
         grid-template-columns: 1;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
   }
   .custom-text {
+    -ms-grid-row: 1;
+    grid-row: 1;
     position: relative;
-    width: 80% !important;
+    width: 80%;
+    margin: auto;
     top: 0;
-    padding: 30% 0;
-    left: 10%;
+    padding: 20% 0;
   }
   .custom-img {
     z-index: 2;
-    -ms-grid-row: 2;
-    grid-row: 2;
-    padding: 0 0 10% 0;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    padding: 0 0 20% 0;
   }
   .custom-img img {
-    z-index: 1 !important;
+    z-index: 2 !important;
     width: 80%;
     position: relative;
     top: 0;
@@ -622,8 +627,11 @@ footer img {
   .nutrition {
     background-color: white;
     height: auto;
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     -ms-grid-columns: 1;
         grid-template-columns: 1;
     -ms-grid-rows: auto auto;
@@ -635,13 +643,13 @@ footer img {
     left: 0;
     width: 80%;
     margin: auto;
-    padding: 30% 0 15%;
+    padding: 10% 0 15%;
   }
   .nutrition-img {
     z-index: 2;
     -ms-grid-row: 2;
     grid-row: 2;
-    padding: 0 0 10% 0;
+    padding: 0 0 20% 0;
   }
   .nutrition-img img {
     z-index: 1 !important;
