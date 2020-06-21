@@ -1,4 +1,11 @@
-h1, h2, h3, h4, h5, h6, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   /*reset for mobile browsers */
   font-weight: normal;
 }
@@ -163,53 +170,6 @@ a {
   transition: 0.3s;
 }
 
-@media screen and (min-width: 1000px) {
-  .mobile,
-  .nav-button {
-    display: none !important;
-  }
-  .desktop {
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    z-index: 1000000 !important;
-  }
-  .desktop.open {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    top: 0vh;
-  }
-  .nav-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    text-align: right;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 100%;
-    margin: auto;
-    height: auto;
-    position: absolute;
-    top: 8vh;
-    z-index: 10000 !important;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  }
-  .nav-links a {
-    width: auto;
-    padding: 0 0.5%;
-    margin-right: 5vh;
-    font-family: tommy;
-    font-size: 2em;
-    z-index: 100 !important;
-  }
-}
-
 .home-contain {
   height: 100vh;
   width: 100%;
@@ -259,38 +219,6 @@ a {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1000px) {
-  .home-text {
-    width: 100%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .home-text div {
-    width: 100%;
-  }
-  .home-text h1 {
-    font-family: tommy;
-    font-size: 9rem;
-    line-height: 0.8em;
-    color: white;
-    padding-bottom: 1vh;
-  }
-  .small-head {
-    font-family: tommy;
-    font-size: 1.94em;
-    line-height: 0.9em;
-    color: #FE4A49;
-    text-transform: uppercase;
-  }
-}
-
 .button {
   background: #FE4A49;
   padding: 20px 30px;
@@ -314,59 +242,6 @@ a {
   color: white;
   padding-bottom: 1vh;
   margin: 20px 0;
-}
-
-.custom-workouts {
-  background-color: #020B14;
-  height: 90vh;
-}
-
-.custom-text {
-  position: relative;
-  top: 30%;
-  left: 10%;
-  width: 35%;
-}
-
-.custom-img {
-  z-index: 2;
-}
-
-.custom-img img {
-  z-index: 1 !important;
-  width: 34%;
-  position: absolute;
-  top: 110vh;
-  right: 5vw;
-}
-
-.nutrition {
-  background-color: white;
-  height: 90vh;
-}
-
-.nutrition-text {
-  position: relative;
-  top: 40%;
-  left: 50%;
-  width: 40%;
-}
-
-.nutrition-img {
-  z-index: 2;
-}
-
-.nutrition-img img {
-  z-index: 1 !important;
-  width: 34%;
-  position: absolute;
-  top: 200vh;
-  left: 5vw;
-}
-
-.nutritiontext {
-  text-align: right;
-  color: #020B14;
 }
 
 .ready {
@@ -401,7 +276,297 @@ a {
   top: 70px;
 }
 
-@media screen and (max-width: 1200px) {
+.about-contain {
+  height: 100vh;
+  width: 100%;
+  background: url(img/about.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.about-certs {
+  width: 80%;
+  padding: 10vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.about-certs div {
+  padding: 2% 0;
+}
+
+.about-certs div h1,
+.about-certs div p {
+  color: #020B14;
+}
+
+.about-block {
+  background-color: #020B14;
+  padding: 10%;
+}
+
+.about-block div {
+  width: 80%;
+  margin: auto;
+  padding: 3% 0;
+}
+
+.connect-block {
+  height: 100vh;
+  width: 100%;
+  background: #FE4A49;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connect-block p {
+  color: #020B14 !important;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background: #020B14;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer img {
+  width: 20%;
+  margin: 0 3%;
+}
+
+.issa {
+  width: 5%;
+}
+
+.au {
+  width: 40px;
+  opacity: 0.25;
+}
+
+.au-link {
+  position: absolute;
+  right: 5%;
+}
+
+@media screen and (min-width: 1000px) {
+  .home-text {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-text div {
+    width: 100%;
+  }
+  .home-text h1 {
+    font-family: tommy;
+    font-size: 9rem;
+    line-height: 0.8em;
+    color: white;
+    padding-bottom: 1vh;
+  }
+  .small-head {
+    font-family: tommy;
+    font-size: 1.94em;
+    line-height: 0.9em;
+    color: #FE4A49;
+    text-transform: uppercase;
+  }
+  .mobile,
+  .nav-button {
+    display: none !important;
+  }
+  .desktop {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 1000000 !important;
+  }
+  .desktop.open {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    top: 0vh;
+  }
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: right;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    position: absolute;
+    top: 8vh;
+    z-index: 10000 !important;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .nav-links a {
+    width: auto;
+    padding: 0 0.5%;
+    margin-right: 5vh;
+    font-family: tommy;
+    font-size: 2em;
+    z-index: 100 !important;
+  }
+  .custom-workouts {
+    background-color: #020B14;
+    height: 90vh;
+  }
+  .custom-text {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    width: 35%;
+  }
+  .custom-img {
+    z-index: 2;
+  }
+  .custom-img img {
+    z-index: 1 !important;
+    width: 34%;
+    position: absolute;
+    top: 110vh;
+    right: 5vw;
+  }
+  .nutrition {
+    background-color: white;
+    height: 90vh;
+  }
+  .nutrition-text {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    width: 40%;
+  }
+  .nutrition-img {
+    z-index: 2;
+  }
+  .nutrition-img img {
+    z-index: 1 !important;
+    width: 34%;
+    position: absolute;
+    top: 200vh;
+    left: 5vw;
+  }
+  .nutritiontext {
+    text-align: right;
+    color: #020B14;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-block div,
+  .about-certs {
+    width: 100%;
+    font-size: 2.5em !important;
+    text-align: center;
+    padding: 10% 0;
+  }
+  .about-block div h1,
+  .about-certs h1 {
+    font-size: 13vw;
+  }
+  .about-block div p,
+  .about-certs p {
+    font-size: 4vw;
+  }
+  .about-contain h1 {
+    font-size: 17vw !important;
+  }
+  .about-contain p {
+    font-size: 6vw !important;
+  }
+  .about-certs {
+    width: 80%;
+    margin: auto;
+    padding: 10vh 0;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    text-align: center;
+  }
+  .about-certs div {
+    padding: 10% 0;
+  }
+  .certs-h1 {
+    width: 100%;
+    font-size: 9vw !important;
+    text-align: center !important;
+  }
+  .connect-block {
+    height: 100vh;
+    width: 100%;
+    background: #FE4A49;
+    background-position: center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .connect-block div {
+    width: 80%;
+    text-align: center;
+  }
+  .connect-block p {
+    color: #020B14 !important;
+  }
+  .connect-block a {
+    font-size: 4vw !important;
+    z-index: 0 !important;
+  }
   .button {
     background: #FE4A49;
     padding: 20px 30px;
@@ -436,7 +601,7 @@ a {
   }
   .custom-text {
     position: relative;
-    width: 80%;
+    width: 80% !important;
     top: 0;
     padding: 30% 0;
   }
@@ -448,10 +613,10 @@ a {
   }
   .custom-img img {
     z-index: 1 !important;
-    width: 80% !important;
+    width: 80%;
     position: relative;
-    top: 0 !important;
-    left: 10% !important;
+    top: 0;
+    left: 10%;
   }
   .nutrition {
     background-color: white;
@@ -520,185 +685,6 @@ a {
     font-size: 3em;
     top: 70px;
   }
-}
-
-.about-contain {
-  height: 100vh;
-  width: 100%;
-  background: url(img/about.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.about-certs {
-  width: 80%;
-  padding: 10vh;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
-}
-
-.about-certs div {
-  padding: 2% 0;
-}
-
-.about-certs div h1,
-.about-certs div p {
-  color: #020B14;
-}
-
-.about-block {
-  background-color: #020B14;
-  padding: 10%;
-}
-
-.about-block div {
-  width: 80%;
-  margin: auto;
-  padding: 3% 0;
-}
-
-@media screen and (max-width: 1000px) {
-  .about-block div,
-  .about-certs {
-    width: 100%;
-    font-size: 2.5em !important;
-    text-align: center;
-    padding: 10% 0;
-  }
-  .about-block div h1,
-  .about-certs h1 {
-    font-size: 13vw;
-  }
-  .about-block div p,
-  .about-certs p {
-    font-size: 4vw;
-  }
-  .about-contain h1 {
-    font-size: 17vw !important;
-  }
-  .about-contain p {
-    font-size: 6vw !important;
-  }
-  .about-certs {
-    width: 80%;
-    margin: auto;
-    padding: 10vh 0;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: left;
-    text-align: center;
-  }
-  .about-certs div {
-    padding: 10% 0;
-  }
-  .certs-h1 {
-    width: 100%;
-    font-size: 9vw !important;
-    text-align: center !important;
-  }
-}
-
-.connect-block {
-  height: 100vh;
-  width: 100%;
-  background: #FE4A49;
-  background-position: center;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.connect-block p {
-  color: #020B14 !important;
-}
-
-@media screen and (max-width: 1000px) {
-  .connect-block {
-    height: 100vh;
-    width: 100%;
-    background: #FE4A49;
-    background-position: center;
-    background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .connect-block div {
-    width: 80%;
-    text-align: center;
-  }
-  .connect-block p {
-    color: #020B14 !important;
-  }
-  .connect-block a {
-    font-size: 4vw !important;
-    z-index: 0 !important;
-  }
-}
-
-footer {
-  width: 100%;
-  height: 20vh;
-  background: #020B14;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-footer img {
-  width: 20%;
-  margin: 0 3%;
-}
-
-.issa {
-  width: 5%;
-}
-
-.au {
-  width: 40px;
-  opacity: 0.25;
-}
-
-.au-link {
-  position: absolute;
-  right: 5%;
-}
-
-@media screen and (max-width: 1000px) {
   footer {
     width: 100%;
     padding: 10% 0;
