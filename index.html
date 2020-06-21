@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>SCHRIENER FITNESS</title>
+    <link rel="icon" href="img/logo_dark.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
+</head>
+<body>
+    <div class=head>
+        <img class="head-logo" src="img/logo_light.png" alt="">
+        <div class="nav-button">
+            <span class=nav-button-top></span>
+            <span class=nav-button-mid></span>
+            <span class=nav-button-bot></span>
+        </div>
+    </div>
+    <nav class=mobile>
+        <div class=nav-links>
+            <a style="color: #FE4A49" href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="connect.html">CONNECT</a>
+        </div>
+    </nav>
+    <nav class=desktop>
+        <div class=nav-links>
+            <a style="color: #FE4A49" href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="connect.html">CONNECT</a>
+        </div>
+    </nav>
+    
+    <div class=home-contain>
+        <div class=home>
+            <div class=home-text>
+                <div>
+                    <h1>BODY BY DESIGN</h1>
+                    <p class=small-head>Together we sculpt the body you want, using the programs I design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=home-main>
+        <div class=custom-workouts>
+            <div class=custom-img>
+                <img src="img/lift.jpg" alt="">
+            </div>
+            <div class=custom-text>
+                <div>
+                    <h1 class="heading">CUSTOM <br> WORKOUTS</h1>
+                    <p class="small-head">TAILORED TO YOUR SPECIFIC NEEDS</p>
+                    <p class=p>As a certified fitness trainer, I'm deeply trained in everything from muscle mechanics to flexibility and cardiovascular dynamics.</p>
+                    <a href="about.html" class=button>LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class=nutrition>
+            <div class=nutrition-img>
+                <img src="img/clip.jpg" alt="">
+            </div>
+            <div class=nutrition-text>
+                <div>
+                    <h1 class="heading nutritiontext">CUSTOM
+                        NUTRITION PLANS</h1>
+                    <p class="small-head nutritiontext">AND SUPPORT, WE'RE IN THIS TOGETHER</p>
+                    <p class="p nutritiontext">As a certified specialist in nutrition, I can help you reach your performance goals faster than you'd previously imagined possible.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=ready>
+            <div>
+                <h1 class="heading">READY TO GET STARTED?</h1>
+                <p class="small-head readytext">OR, HAVE ANY QUESTIONS?</p>
+                <a href="connect.html" class=readybutton>LET'S TALK</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img class=issa src="img/issa-elite.png" alt="">
+        <img src="img/textlogo_light.png" alt="">
+        <img class=issa src="img/issa.png" alt="">
+        <a class=au-link href="https://adamuniver.se"><img class=au src="img/au.png" alt=""></a>
+    </footer>
+
+
+    <script>
+        $(".nav-button").click(function() {
+            $(".nav-button").toggleClass("open");
+            $("nav").toggleClass("open");
+        })
+    </script>
+</body>
+</html>
