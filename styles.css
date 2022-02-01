@@ -555,7 +555,7 @@ footer img {
   }
   .connect-block {
     width: 100%;
-    background: #FE4A49;
+    background: white;
     background-position: center;
     background-size: cover;
     display: -webkit-box;
@@ -572,14 +572,14 @@ footer img {
     background: #FE4A49;
   }
   .connect-block div {
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
-  .connect-block p {
+  .connect-block .heading {
     color: #020B14 !important;
   }
   .connect-block a {
-    font-size: 4vw !important;
+    color: black !important;
     z-index: 0 !important;
   }
   .button {
