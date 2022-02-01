@@ -335,6 +335,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.connect-block div .heading {
+  color: #FE4A49;
+}
+.connect-block div {
+  width: 100%;
+}
 
 .connect-block p {
   color: #020B14 !important;
