@@ -320,7 +320,8 @@ a {
 }
 
 .connect-block {
-  height: 100vh;
+  margin-top: 20vh;
+  height: 800vh;
   width: 100%;
   background: white;
   background-position: center;
