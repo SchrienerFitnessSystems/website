@@ -323,7 +323,7 @@ a {
   margin-top: 20vh;
   height: 80vh;
   width: 100%;
-  background: #FE4A49;
+  background: white;
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -335,6 +335,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.connect-body {
+  background: #FE4A49 !important;
 }
 .connect-block div .heading {
   color: #020B14;
