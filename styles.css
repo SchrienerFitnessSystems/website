@@ -337,9 +337,11 @@ a {
 }
 .connect-block div .heading {
   color: #FE4A49;
+  text-align: center;
 }
 .connect-block div {
   width: 100%;
+  text-align: center;
 }
 
 .connect-block p {
